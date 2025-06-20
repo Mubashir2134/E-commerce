@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.div2 {
+  position: fixed;
+  transform: translate(-50%, -50%) scale(1);
+  top: 0%;
+  left: 50%;
+  font-weight: 500;
+  color: #832b00;
+  font-size: 40px;
+  letter-spacing: 5px;
+  transform-origin: center;
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1),
+    top 1s cubic-bezier(0.77, 0, 0.175, 1), letter-spacing 1s ease-in;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.div2.expand {
+  position: fixed;
+  top: 300px;
+  transform: translate(-50%, -50%) scale(4);
+  letter-spacing: 8px;
+  font-size: 40px;
+}
+
+/* Shrink back on scroll */
+.div2.shrink {
+  top: 35px;
+  transform: translate(-50%, -50%) scale(1);
+  letter-spacing: 4px;
+}
+/* FULL HERO SECTION IMAGES  */
+
+#icon {
+  cursor: pointer;
+}
+
+#menu-div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: rgb(255, 221, 0);
+  animation-duration: 0.5s;
+  animation-name: slide-in;
+  z-index: 999;
+}
+
+.contact-div {
+  padding: 15px;
+  width: 500px;
+  height: 100vh;
+  background-color: rgb(193, 66, 49);
+  animation-duration: 0.5s;
+  animation-name: slide-in-right;
+  z-index: 999;
+}
+
+#close-btn {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#menu-point {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 130px 70px;
+  height: 40vh;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+#discription {
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+}
+.main-icon {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s ease-in-out;
+}
+#free-Shipping:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.5s ease-in-out;
+}
+
+.Bg_Img {
+  width: 100%;
+  background-position: center;
+}
+
+.totall-Price {
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  background: #c50a0a;
+}
+/* .account-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+} */
+
+.createAccount-div {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+}
+.primary-Account {
+  padding: 20px;
+}
+
+.log-In {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 15px;
+  padding: 7px 15px;
+  border-radius: 2px;
+  border: 2px solid black;
+}
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.congragulation-div {
+  width: 350px;
+}
+
+.msg-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.chekOutBtn {
+  font-size: 20px;
+  padding: 5px 8px;
+  border: none;
+  border: 2px solid black;
+}
+.checkOut {
+  width: 900px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(-150vw);
+    scale: 200% 1;
+  }
+  to {
+    transform: translateX(0);
+    scale: 100% 1;
+  }
+}
+
+.button {
+  background-color: #ffffff;
+  box-shadow: #edd6ca 0 -12px 6px inset;
+  color: #1a1a1a;
+
+  border-radius: 40em;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  /* background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset; */
+
+  background-color: #e3a29c;
+  box-shadow: #5e3c2c 0 -6px 8px inset;
+  color: #ffffff;
+
+  transform: scale(1.125);
+}
+
+.button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}

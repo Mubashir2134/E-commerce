@@ -1,0 +1,43 @@
+import { Link } from "react-router-dom";
+import { ShopContext } from "../contexts/ShopContextProvider";
+// import ShopContextProvider from "./ShopContextProvider";
+import { useContext } from "react";
+// import { useState } from "react";
+function ProductCard(props) {
+  const { id, miniImg, productName, productPrice } = props;
+  const { increaseItem, removeCart, cartItems } = useContext(ShopContext);
+
+  const handleAddToCart = (itemId) => {
+    const isInCart = cartItems[itemId] > 0;
+
+    if (isInCart) {
+      removeCart(itemId);
+    } else {
+      increaseItem(itemId);
+    }
+  };
+  return (
+    <div className=" mb-[30px] p-5 w-[300px] h-[400px] flex flex-col gap-[30px] items-center bg-[#efebeb]">
+      <Link to="/bags" style={{ textDecoration: "none" }}>
+        <img className=" w-[250px]" src={miniImg} />
+      </Link>
+
+      <div className=" w-[100%] flex flex-col justify-between">
+        <div className=" w-[100%] flex items-center justify-between">
+          <p className=" text-black">{productName}</p>
+          <p className="text-black">{productPrice}</p>
+        </div>
+
+        <button
+          className=" mt-5 py-[7px] px-[5px] border-none bg-[#fdd3c3] cursor-pointer"
+          onClick={() => handleAddToCart(id)}
+        >
+          {cartItems[id] > 0 ? "Remove From Cart" : "Add To Cart"}
+          {/* {cartItemAmount > 0 && `(${cartItemAmount})`} */}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default ProductCard;
