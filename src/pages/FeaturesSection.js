@@ -11,7 +11,7 @@ const FeaturesSection = () => {
   return (
     <>
       <div className="w-[100%] h-auto flex flex-col items-center">
-        <div className="w-[100%] flex flex-col items-center m-[50px] px-[50px] gap-[70px] max-[360px]:gap-[40px] max-[360px]:p-[25px]">
+        <div className="w-[100%] flex flex-col items-center m-[50px] px-[50px] gap-[70px]  max-[360px]:gap-[40px] max-[360px]:p-[25px]">
           <h1 className=" text-[36px] font-bold  max-[360px]:text-[25px]">Why Chose Us?</h1>
           <div className=" w-[100%] flex justify-between items-center max-[360px]:flex-col max-[360px]:gap-[20px]   text-3xl flex-wrap">
             <div className=" w-[200px] flex flex-col items-center gap-5 ">

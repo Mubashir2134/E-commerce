@@ -115,7 +115,7 @@ let Footer = () => {
   return (
     <footer className="w-full bg-gray-100 text-gray-700">
    
-      <div className="  m-[50px] flex justify-between  py-[50px] max-[360px]:flex-col  max-[360px]:gap-[20px] max-[50px]:py-[25px] text-center ">
+      <div className="  m-[50px] flex justify-between  py-[50px] max-[360px]:flex-col  max-[360px]:gap-[20px] max-[50px]:py-[20px] text-center ">
         {/* max-w-7xl */}
        
         <div className="space-y-3">
