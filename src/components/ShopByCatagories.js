@@ -11,7 +11,7 @@ const ShopByCatagories = () => {
         {/* <div className="shopBy"> */}
           <h1 className=" text-[36px] max-[360px]:text-[25px] font-bold">Shop by Category</h1>
         {/* </div> */}
-        <div className=" w-[100%] flex min-[360px]:flex-wrap max-[360px]:flex-col max-[360px]:gap-[20px] gap-[40px] max-[360px]:justify-center justify-between items-center text-center">
+        <div className=" w-[100%] flex flex-wrap max-[360px]:flex-col max-[360px]:gap-[20px] gap-[40px] max-[360px]:justify-center justify-between items-center text-center">
           <CardsComponent
             img="/Images/Women-Bag.webp"
             heading="Women's Bags"
