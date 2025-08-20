@@ -7,7 +7,7 @@ function CardsComponent({ path, img, heading }) {
       // className=" flex flex-col items-center cursor-pointer gap-5"
       style={{ textDecoration: "none", color: "black" }}
     >
-      <img src={img} className=" w-[300px] max-[360px]:w-[200px]" />
+      <img src={img} className=" w-[300px] " />
 
       <p className="heading">{heading}</p>
     </Link>

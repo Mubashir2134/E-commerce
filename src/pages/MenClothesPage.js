@@ -13,7 +13,7 @@ let MenClothesPage = () => {
       {/* <div className="image-Box"> */}
         <img className="Bg-Image w-[100%] h-[100vh] object-cover" src="/MenCloth/Bg2.jpg" />
       {/* </div> */}
-      <div className=" gap-[40px] flex flex-wrap m-[50px] max-[360px]:m-[25px]  max-[360px]:gap-[20px]  items-center justify-between">
+      <div className="  flex flex-wrap m-[50px] max-[360px]:m-[25px] max-[360px]:justify-center gap-[40px] max-[360px]:gap-[20px]  items-center justify-between ">
         {MenClothesData.map((product) => (
           <ProductCard
             key={product.id}
