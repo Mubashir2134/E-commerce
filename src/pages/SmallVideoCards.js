@@ -2,7 +2,7 @@
 
 function VideoCards({ videopart }) {
   return (
-    <video autoPlay loop muted className=" w-[400px] h-[300px]">
+    <video autoPlay loop muted className=" w-[400px] ">
       <source src={videopart} className="videopart" />
     </video>
   );

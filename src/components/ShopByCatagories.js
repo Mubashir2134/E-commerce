@@ -7,11 +7,11 @@ import CardsComponent from "./CardComponent";
 const ShopByCatagories = () => {
   return (
     <>
-      <div className=" flex flex-col items-center">
-        <div className="shopBy">
-          <h1 className=" text-3xl font-bold">Shop by Category</h1>
-        </div>
-        <div className=" w-[100%] py-[70px] px-[40px] flex flex-wrap justify-between items-center">
+      <div className=" flex flex-col items-center m-[50px] gap-[40px] max-[360px]:m-[25px]">
+        {/* <div className="shopBy"> */}
+          <h1 className=" text-[36px] max-[360px]:text-[25px] font-bold">Shop by Category</h1>
+        {/* </div> */}
+        <div className=" w-[100%] flex flex-wrap max-[360px]:flex-col max-[360px]:gap-[20px] gap-[40px]  justify-between items-center text-center">
           <CardsComponent
             img="/Images/Women-Bag.webp"
             heading="Women's Bags"
@@ -51,7 +51,7 @@ const ShopByCatagories = () => {
           <CardsComponent
             img="/Images/Men_RTW.webp"
             heading="Men's Ready-to-Wear"
-            path="mencloth"
+            path="/mencloth"
           />
         </div>
       </div>

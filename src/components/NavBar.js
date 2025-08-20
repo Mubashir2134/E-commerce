@@ -66,9 +66,12 @@ let NavBar = () => {
 
   return (
     <>
-      <div className=" w-[100%] fixed  h-[10vh] flex content-between align-middle bg-[lightgray] ">
-        <div className=" flex justify-between items-center w-[100%] px-[40px] py-[10px]">
-          <div className=" text-xl cursor-pointer" onClick={showCotact}>
+      <div className=" w-[100%] fixed  h-[10vh] flex content-between items-center bg-[lightgray] text-center  ">
+        <div className=" flex justify-between items-center w-[100%] px-[40px] max-[360px]:px-[20px]   ">
+          <div
+            className=" text-xl  font-semibold max-[360px]:font-medium max-[360px]:text-[16px] cursor-pointer"
+            onClick={showCotact}
+          >
             +Contact
           </div>
           <div
@@ -82,21 +85,33 @@ let NavBar = () => {
           >
             {/* GUCCI */}
             Louis Vuitton
+            {/* Jutti */}
           </div>
           {scrollPosition === 0 && location.pathname === "/" && (
             <div className="mylogo">Al-Qazi Group Of Companies</div>
           )}
-          <div className="flex items-center justify-between w-[110px] text-xl">
+          <div className="flex items-center justify-between w-[110px] max-[360px]:w-[70px] text-xl max-[360px]:text-[30px]">
             {/* <Link to="cartComponent" className="cart"> */}
             <FontAwesomeIcon
+              className="text-[18px]"
               onClick={CardComponent}
               id="icon"
               icon={faCartShopping}
               style={{ color: "black" }}
             />
             {/* </Link> */}
-            <FontAwesomeIcon id="icon" icon={faSearch} onClick={showSearch} />
-            <FontAwesomeIcon id="icon" icon={faBars} onClick={showMenu} />
+            <FontAwesomeIcon
+              className="text-[18px]"
+              id="icon"
+              icon={faSearch}
+              onClick={showSearch}
+            />
+            <FontAwesomeIcon
+              className="text-[18px]"
+              id="icon"
+              icon={faBars}
+              onClick={showMenu}
+            />
           </div>
         </div>
       </div>

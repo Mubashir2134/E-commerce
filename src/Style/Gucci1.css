@@ -7,7 +7,7 @@
 .div2 {
   position: fixed;
   transform: translate(-50%, -50%) scale(1);
-  top: 0%;
+  top: 10%;
   left: 50%;
   font-weight: 500;
   color: #832b00;
@@ -16,7 +16,8 @@
   transform-origin: center;
   transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1),
     top 1s cubic-bezier(0.77, 0, 0.175, 1), letter-spacing 1s ease-in;
-  z-index: 999;
+  /* z-index: 999; */
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -36,6 +37,40 @@
 }
 /* FULL HERO SECTION IMAGES  */
 
+/* FOR DIV SHRINK AND EXPAND ON MOBILE SCREEN MEDIA QUERY  */
+
+@media screen and (max-width: 360px) {
+  /* Styles for screens up to 360px wide */
+
+  .div2 {
+    position: fixed;
+    transform: translate(-50%, -50%) scale(1);
+    top: 10%;
+    left: 50%;
+    font-weight: 550;
+    color: #832b00;
+    font-size: 14px;
+    /* letter-spacing: 5px; */
+    transform-origin: center;
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1),
+      top 1s cubic-bezier(0.77, 0, 0.175, 1), letter-spacing 1s ease-in;
+    z-index: 999;
+    pointer-events: none;
+    /* z-index: -1; */
+  }
+
+  .div2.expand {
+    top: 150px;
+    transform: translate(-50%, -50%) scale(2);
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  .div2.shrink {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: 2px;
+  }
+}
+
 #icon {
   cursor: pointer;
 }
@@ -53,13 +88,37 @@
 }
 
 .contact-div {
+
+
   padding: 15px;
   width: 500px;
   height: 100vh;
   background-color: rgb(193, 66, 49);
   animation-duration: 0.5s;
   animation-name: slide-in-right;
-  z-index: 999;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 360px) {
+  #menu-div {
+    width: 360px;
+  }
+  .contact-div {
+    width: 360px;
+  }
+
+  .contact-div {
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+    padding: 15px;
+    width: 360px;
+    height: 100vh;
+    background-color: rgb(193, 66, 49);
+    animation-duration: 0.5s;
+    animation-name: slide-in-right;
+    z-index: 999;
+  }
 }
 
 #close-btn {

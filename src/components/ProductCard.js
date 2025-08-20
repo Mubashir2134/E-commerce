@@ -17,9 +17,9 @@ function ProductCard(props) {
     }
   };
   return (
-    <div className=" mb-[30px] p-5 w-[300px] h-[400px] flex flex-col gap-[30px] items-center bg-[#efebeb]">
+    <div className=" p-5 w-[300px] h-[400px] max-[360px]:w-[250px] max-[360px]:h-[350px] flex flex-col gap-[30px] items-center bg-[#efebeb]">
       <Link to="/bags" style={{ textDecoration: "none" }}>
-        <img className=" w-[250px]" src={miniImg} />
+        <img className=" w-[250px] max-[360px]:w-[130px] max-[360px]:h-[130px]" src={miniImg} />
       </Link>
 
       <div className=" w-[100%] flex flex-col justify-between">
@@ -29,7 +29,7 @@ function ProductCard(props) {
         </div>
 
         <button
-          className=" mt-5 py-[7px] px-[5px] border-none bg-[#fdd3c3] cursor-pointer"
+          className=" mt-5 py-[7px] px-[5px] max-[360px]:p-[2px] border-none bg-[#fdd3c3] cursor-pointer"
           onClick={() => handleAddToCart(id)}
         >
           {cartItems[id] > 0 ? "Remove From Cart" : "Add To Cart"}

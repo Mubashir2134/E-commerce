@@ -7,10 +7,10 @@ const WomenShoes = () => {
   return (
     <>
       <NavBar />
-      <div className=" w[100%] h-[100vh]">
-        <img className=" w-[100%] h-[100vh]" src="/womenShoe/BG.jpg" />
-      </div>
-      <div className=" my-[70px] mx-[40px] flex flex-wrap items-center justify-between">
+      {/* <div className=" w[100%] h-[100vh]"> */}
+        <img className=" w-[100%] h-[100vh] object-cover" src="/womenShoe/BG.jpg" />
+      {/* </div> */}
+      <div className="  gap-[40px] flex flex-wrap m-[50px] max-[360px]:m-[25px]  max-[360px]:gap-[20px]  items-center justify-between">
         {WomenShoe.map((product) => (
           <ProductCard
             key={product.id}

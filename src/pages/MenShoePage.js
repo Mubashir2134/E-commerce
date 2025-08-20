@@ -8,10 +8,10 @@ let MenShoePage = () => {
   return (
     <>
       <NavBar />
-      <div className="image-Box">
-        <img className="Bg-Image" src="/MenShoe/Bg.jpg" />
-      </div>
-      <div className=" my-[70px] mx-[40px] flex flex-wrap items-center justify-between">
+      {/* <div className="image-Box"> */}
+        <img className=" w-[100%] h-[100vh] Bg-Image object-cover" src="/MenShoe/Bg.jpg" />
+      {/* </div> */}
+      <div className="  gap-[40px] flex flex-wrap m-[50px] max-[360px]:m-[25px]  max-[360px]:gap-[20px]  items-center justify-between">
         {MenShoeData.map((product) => (
           <ProductCard
             key={product.id}

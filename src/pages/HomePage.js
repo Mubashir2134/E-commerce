@@ -4,6 +4,7 @@ import ShopByCatagories from "../components/ShopByCatagories";
 import VideoSec from "../pages/VideosSection";
 import ScrollToTop from "../utils/scrolltTop";
 import NavBar from "../components/NavBar";
+import BackGroundVideo from "./BackGroundVideo";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
     <>
       <ScrollToTop>
         <NavBar />
+        <BackGroundVideo />
         <FeaturesSection />
         <CardsComponent />
         <ShopByCatagories />

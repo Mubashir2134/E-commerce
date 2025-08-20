@@ -10,10 +10,10 @@ const WomenSmallBags = () => {
   return (
     <>
       <NavBar />
-      <div className=" w-[100%] h-[100vh]">
-        <img className=" w-[100%] h-[100vh]" src="/SmallBag/BG.jpg" />
-      </div>
-      <div className=" my-[70px] mx-[40px] flex flex-wrap items-center justify-between">
+      {/* <div className=" w-[100%] h-[100vh]"> */}
+        <img className=" w-[100%] h-[100vh] object-cover" src="/SmallBag/BG.jpg" />
+      {/* </div> */}
+      <div className=" m-[50px] max-[360px]:m-[25px] flex flex-wrap gap-[40px] max-[360px]:gap-[20px]  items-center justify-between ">
         {WomenSmallBag.map((product) => (
           <ProductCard
             key={product.id}
