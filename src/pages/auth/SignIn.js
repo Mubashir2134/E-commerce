@@ -125,6 +125,14 @@ const SignIn = ({ setIsLoggedIn }) => {
               </button>
 
             </form>
+            
+              <button
+                className="buttonn"
+                // className=" hidden max-[360px]:block"
+                onClick={nevigatetoSignUp}
+              >
+                SignUp
+              </button>
           </div>
           {/* <div className=" w-[500px] h-[600px] bg-red-800"></div> */}
 
