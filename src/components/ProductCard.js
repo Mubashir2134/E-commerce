@@ -17,7 +17,7 @@ function ProductCard(props) {
     }
   };
   return (
-    <div className=" p-5 max-w-[300px] max-h-[400px] max-[360px]:max[250px] max[360px]:w-[250px]  flex justify-between flex-col gap-[30px] items-center bg-[#efebeb]">
+    <div className=" p-5 max-w-[300px] h-[400px] max-[360px]:h-[300px] max-[360px]:w-[250px]  flex justify-between flex-col gap-[30px] items-center bg-[#efebeb]">
       <Link to="/bags" style={{ textDecoration: "none" }}>
         <img className=" w-[250px] max-[360px]:w-[130px] max-[360px]:h-[130px]" src={miniImg} />
       </Link>
