@@ -37,12 +37,12 @@ const SignUp = () => {
   // };
   return (
     <div className=" w-[100% ] h-[100vh] flex items-center justify-center bg-[linear-gradient(135deg,_#bfd2e3,_#e8dad3,_#f4d3c0)] ">
-      <div className="w-[1100px] h-[600px] bg-white rounded-[15px]">
-        <div className=" flex justify-between items-center h-[100%]">
-          <div className="w-[500px] h-[500px] flex flex-col gap-7 p-5 items-center justify-center">
+      <div className="w-[1100px] max-[360px]:w-[360px] h-[600px] bg-white rounded-[15px]">
+        <div className=" flex justify-between max-[360px]:justify-center items-center h-[100%]">
+          <div className="w-[500px] h-[500px] max-[360px]:w-[300px] flex flex-col gap-7 p-5 items-center">
             <h1 className=" text-center text-4xl font-bold">Sign Up</h1>
             <form
-              className=" mt-7 flex flex-col gap-7"
+              className="mt-7 flex flex-col justify-center items-center gap-4 max-[360px]:w-[300px]"
               onSubmit={HandleSubmit}
               autoComplete="off"
             >
@@ -55,7 +55,7 @@ const SignUp = () => {
                   }
                   type="text"
                   placeholder="Please Enter Your Name"
-                  className="flex w-96 h-9 pl-2 rounded  bg-[#e4e4e4] outline-none"
+                  className="flex w-96 h-9 pl-2 rounded max-[360px]:w-[270px] bg-[#e4e4e4] outline-none"
                 />
               </div>
               <div className="user-Email">
@@ -68,7 +68,7 @@ const SignUp = () => {
                   }
                   type="email"
                   placeholder="Please Enter Your Email"
-                  className=" flex w-96 h-9 pl-2 rounded  bg-[#e4e4e4] outline-none "
+                  className=" flex w-96 h-9 pl-2 rounded max-[360px]:w-[270px]  bg-[#e4e4e4] outline-none "
                 />
               </div>
               <div className="user-Password">
@@ -81,7 +81,7 @@ const SignUp = () => {
                   }
                   type="password"
                   placeholder="Please Enter Your Password"
-                  className="flex w-96 h-9 pl-2 rounded  bg-[#e4e4e4] outline-none"
+                  className="flex w-96 h-9 pl-2 rounded max-[360px]:w-[270px]  bg-[#e4e4e4] outline-none"
                 />
               </div>
 
@@ -95,7 +95,7 @@ const SignUp = () => {
             </form>
           </div>
 
-          <div className="w-1/2 bg-[#9c786c] rounded-l-full h-full flex items-center justify-center">
+          <div className=" max-[360px]:hidden w-1/2 bg-[#9c786c] rounded-l-full h-full flex items-center justify-center">
             <div className="flex flex-col gap-7 items-center">
               <h1 className="text-3xl font-semibold">
                 Your Journey Begins Here!

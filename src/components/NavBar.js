@@ -123,7 +123,7 @@ let NavBar = () => {
         >
           <div id="menu-div" onClick={(e) => e.stopPropagation()}>
             <div
-              className=" absolute top-4 right-4 flex items-center justify-center w-[50px] h-[50px] bg-white rounded-full transition duration-100 ease hover:scale-90"
+              className=" absolute top-4 right-4  max-[360px]:right-10 ml-[200px] flex  items-center justify-center w-[50px] h-[50px] bg-white rounded-full transition duration-100 ease hover:scale-90"
               onClick={hideMenu}
             >
               <FontAwesomeIcon id="close-btn" icon={faClose} />
@@ -180,18 +180,18 @@ let NavBar = () => {
           <div className="contact-div">
             <div
               id="close2"
-              className=" absolute flex items-center justify-center w-[50px] h-[50px] rounded-full bg-white p-4 transition duration-100 ease hover:scale-90"
+              className="  flex items-center justify-center max-[360px]:ml-[20px] max-[360px]:w-[30px] max-[360px]:h-[30px] w-[50px] h-[50px] rounded-full bg-white transition duration-100 ease hover:scale-90 cursor-pointer"
               onClick={hideContact}
             >
-              <FontAwesomeIcon id="close-btn" icon={faClose} />
+              <FontAwesomeIcon  id="close-btn" icon={faClose} />
             </div>
 
-            <div className="flex flex-col justify-between my-[130px] mx-[70px] h-[40vh] text-xl">
-              <p className=" text-[16px] pb-2">
+            <div className=" w-[100%]  flex flex-col justify-center  gap-[30px]  text-xl">
+              <p className="  text-[16px]  max-[360px]:hidden">
                 Wherever you are, Louis Vuitton Client Advisors will be
                 delighted to assist you.
               </p>
-              <p className="text-[18px]">+92 1234567</p>
+              <p className="text-[18px]">+92 3228530477</p>
               <p className="text-[18px]">Need Help?</p>
               <p className="text-[18px]">FAQ</p>
               <p className="text-[18px]">Care Services</p>

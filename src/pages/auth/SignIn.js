@@ -61,12 +61,12 @@ const SignIn = ({ setIsLoggedIn }) => {
   }, []);
   return (
     <div className=" w-[100% ] h-[100vh] flex items-center justify-center bg-[linear-gradient(135deg,_#bfd2e3,_#e8dad3,_#f4d3c0)]">
-      <div className="w-[1100px] h-[600px] bg-white rounded-[15px]">
-        <div className=" flex justify-between items-center h-[100%]">
-          <div className=" w-[500px] h-[500px] flex flex-col gap-7 p-5 items-center ">
+      <div className="w-[1100px] max-[360px]:w-[360px] h-[600px] bg-white rounded-[15px]">
+        <div className=" flex justify-between max-[360px]:justify-center items-center h-[100%]">
+          <div className=" w-[500px] h-[500px] max-[360px]:w-[300px] flex flex-col gap-7 p-5 items-center ">
             <h1 className=" text-center text-4xl font-bold">LOGIN</h1>
 
-            <div className=" flex justify-between gap-5">
+            <div className=" flex justify-between gap-8">
               <div className=" w-[40px] h-[40px] rounded-md border-[3px] border-black flex items-center justify-center cursor-pointer">
                 <FontAwesomeIcon className="text-[20px]" icon={faGooglePlusG} />
               </div>
@@ -81,7 +81,7 @@ const SignIn = ({ setIsLoggedIn }) => {
               </div>
             </div>
             <form
-              className=" mt-7 flex flex-col gap-4"
+              className=" mt-7 flex flex-col justify-center items-center gap-4 max-[360px]:w-[300px]"
               onSubmit={handleLogIn}
               autoComplete="off"
             >
@@ -95,7 +95,7 @@ const SignIn = ({ setIsLoggedIn }) => {
                   }
                   type="email"
                   placeholder="Email"
-                  className="flex w-96 h-9 pl-2 rounded  bg-[#e4e4e4] outline-none"
+                  className="flex w-96 max-[360px]:w-[270px] max-[300px]:pl-[0px] h-9 pl-2 rounded  bg-[#e4e4e4] outline-none"
                 />
               </div>
               <div className="user-Password">
@@ -108,7 +108,7 @@ const SignIn = ({ setIsLoggedIn }) => {
                   }
                   type="password"
                   placeholder="Password"
-                  className="flex w-96 h-9 pl-2 rounded bg-[#e4e4e4] outline-none"
+                  className="flex w-96 max-[360px]:w-[270px] h-9 pl-2 rounded bg-[#e4e4e4] outline-none"
                 />
               </div>
 
@@ -119,10 +119,20 @@ const SignIn = ({ setIsLoggedIn }) => {
               >
                 login
               </button>
+
+              <button
+                className="buttonn"
+                // className=" hidden max-[360px]:block"
+                onClick={signUpPage}
+              >
+                SignUp
+              </button>
             </form>
           </div>
           {/* <div className=" w-[500px] h-[600px] bg-red-800"></div> */}
-          <div className="w-1/2 bg-[#9c786c] rounded-l-full h-full flex items-center justify-center ">
+
+          {/* SECOND DIV FOR SIGN UP */}
+          <div className=" max-[360px]:hidden w-1/2 bg-[#9c786c] rounded-l-full h-full flex items-center justify-center ">
             <div className=" flex flex-col gap-7 w-[350px] items-center">
               <h1 className=" flex m-auto text-4xl">
                 Welcome To 𝑳𝑽
