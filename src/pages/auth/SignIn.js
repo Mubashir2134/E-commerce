@@ -41,6 +41,10 @@ const SignIn = ({ setIsLoggedIn }) => {
     navigate("/signup");
   };
 
+
+  const nevigatetoSignUp=()=>{
+    navigate("/SignUp")
+  }
   useEffect(() => {
     const existingUsers = JSON.parse(localStorage.getItem("users"));
     if (!existingUsers || existingUsers.length === 0) {
@@ -120,13 +124,6 @@ const SignIn = ({ setIsLoggedIn }) => {
                 login
               </button>
 
-              <button
-                className="buttonn"
-                // className=" hidden max-[360px]:block"
-                onClick={signUpPage}
-              >
-                SignUp
-              </button>
             </form>
           </div>
           {/* <div className=" w-[500px] h-[600px] bg-red-800"></div> */}

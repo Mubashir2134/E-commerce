@@ -34,11 +34,9 @@ const ShopContextProvider = (props) => {
 
   const removeCart = (itemId) => {
     setCartItem((prev) => {
-      if (prev[itemId] === 0) {
-        return { ...prev, [itemId]: 1 };
-      } else {
+      if (prev[itemId] === 1) {
         return { ...prev, [itemId]: 0 };
-      }
+      } 
     });
   };
 
