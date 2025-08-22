@@ -96,14 +96,14 @@
   animation-name: slide-in-right;
   z-index: 1000;
 }
-.checkOut {
+/* .checkOut {
   width: 900px;
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-}
+} */
 #close-btn {
   padding: 60px;
   font-size: 25px;

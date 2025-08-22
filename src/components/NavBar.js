@@ -66,7 +66,7 @@ let NavBar = () => {
 
   return (
     <>
-      <div className=" w-[100%] fixed  h-[10vh] flex content-between items-center bg-[lightgray] text-center  ">
+      <div className=" w-full fixed  h-[10vh] flex content-between items-center bg-[lightgray] text-center  ">
         <div className=" flex justify-between items-center w-[100%] px-[40px] max-[360px]:px-[20px]   ">
           <div
             className=" text-xl  font-semibold max-[360px]:font-medium max-[360px]:text-[16px] cursor-pointer"

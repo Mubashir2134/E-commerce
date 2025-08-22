@@ -30,18 +30,18 @@ export const ShoppingCart = () => {
         }
       })}
 
-      {/* <div className="checkOut">
+      <div className="min-[360px]:max-w-[900px] mx-auto flex justify-between max-[360px]:m-4 ">
         <button className="chekOutBtn" onClick={shippingAdres}>
           CheckOut
         </button>
 
-        <p className=" flex  items-center gap-2">
+        <span className=" flex  items-center gap-2">
           <p className=" text-2xl max-[360px]:text-[18px] max-[360px]:font-normal font-medium">
             Subtotall:
           </p>
           <p className="text-xl">${totallAmount}</p>
-        </p>
-      </div> */}
+        </span>
+      </div>
       {/* </div> */}
       <Footer />
     </>

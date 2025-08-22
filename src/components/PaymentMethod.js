@@ -2,11 +2,11 @@ import React from "react";
 
 const PaymentMethod = () => {
   return (
-    <div className=" w-[550px] h-[500px] p-[20px] bg-[#f5f2f2] rounded-xl">
-      <div className=" flex flex-col items-center gap-5">
+    <div className=" min-[360px]:max-w-[550px]  p-[20px] bg-[#f5f2f2] rounded-xl">
+      <div className=" flex flex-col items-center gap-7">
         <h1 className=" text-2xl font-semibold">Add Payment Method</h1>
 
-        <div className=" flex w-[80%] items-center justify-between">
+        <div className=" flex min-w-[80%] items-center justify-between">
           <img className=" w-[50px] cursor-pointer" src="/Images/visa.png" />
           <img
             className="w-[70px] cursor-pointer"
@@ -29,17 +29,17 @@ const PaymentMethod = () => {
           placeholder="Card Holder's Name *"
         />
         <input
-          className=" w-[100%]  border-2 border-gray-400  rounded outline-none bg-transparent p-[5px] "
+          className=" flex-1 min-w-[200px]  border-2 border-gray-400  rounded outline-none bg-transparent p-[5px] "
           placeholder="Card Number *"
         />
 
-        <div className=" flex justify-between">
+        <div className=" flex flex-wrap gap-7">
           <input
-            className=" w-[230px] h-[30px] p-4 border-2 border-gray-400  rounded bg-transparent  outline-none"
+            className="flex-1 min-w-[200px] h-[30px] p-4 border-2 border-gray-400  rounded bg-transparent  outline-none"
             placeholder="Expiration Year *"
           />
           <input
-            className=" w-[230px] h-[30px] p-4 border-2 border-gray-400  rounded bg-transparent  outline-none"
+            className="flex-1 min-w-[200px] h-[30px] p-4 border-2 border-gray-400  rounded bg-transparent  outline-none"
             placeholder="Expiration Month *"
           />
         </div>

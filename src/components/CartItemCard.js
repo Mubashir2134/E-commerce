@@ -70,8 +70,10 @@ export const CartItemCard = ({ data }) => {
       {/* max-[360px]:justify-center */}
 
       {/* <div className=" bg-[#f5f2f2] w-[900px] h-[270px] max-[360px]:w-[300px] max-[360px]:h-[250px] m-auto  p-[40px] max-[360px]:p-0 max-[360px]:m-[14px]"> */}
-      <div className="bg-[#f5f2f2] min-[360px]:max-w-[900px] mx-auto p-5 min-[360px]:p-6 max-[360px]:m-4 mb-10  -z-10 ">
-        <div className="flex justify-between max-[360px]:flex-col max-[360px]:items-center min-[360px]:p-6 relative  ">
+      <div className="bg-[#f5f2f2] min-[360px]:max-w-[900px] mx-auto p-5 min-[360px]:p-6 max-[360px]:m-4 mb-10 flex-start  ">
+        <FontAwesomeIcon className=" top-0 right-0 cursor-pointer " icon={faTimes} onClick={()=>removeCart(id)}/>
+
+        <div className="flex justify-between max-[360px]:flex-col max-[360px]:items-center min-[360px]:p-6  z-[10]  ">
           <div className=" w-[180px] h-[180px] min-[360px]:w-[120px] min-[360px]:h-[120px] bg-[#efebeb] flex items-center justify-center">
             <img
               src={imgUrl}
@@ -107,8 +109,8 @@ export const CartItemCard = ({ data }) => {
             <p>${subtotal}</p>
           </div>
         
-        <FontAwesomeIcon className="absolute top-0 right-0 cursor-pointer " icon={faTimes} onClick={()=>removeCart(id)}/>
       </div>
+
       </div>
     </>
   );

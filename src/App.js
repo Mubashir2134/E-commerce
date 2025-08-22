@@ -37,7 +37,7 @@ import CardsComponent from "./components/CardComponent";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import ShippingAdress from "./components/ShippingAdress";
+// import ShippingAdress from "./components/ShippingAdress";
 import CheckoutDetails from "./pages/CheckoutDetails";
 // import PaymentMethod from "./components/PaymentMethod";
 const isFirstload = localStorage.getItem(false);
